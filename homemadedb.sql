@@ -76,7 +76,7 @@ INSERT INTO `orders` (`sl_no`, `r_id`, `order_id`, `dt`, `name`, `user_id`, `ord
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
+
 -- User interaction tracking table
 CREATE TABLE user_interactions (
     interaction_id BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -125,8 +125,7 @@ CREATE TABLE recommendation_weights (
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-=======
->>>>>>> 7771d633fe55fb47ca8976c7df47158059e58b56
+
 -- Table structure for table `restaurant`
 --
 
@@ -152,7 +151,7 @@ CREATE TABLE `restaurant` (
 --
 
 INSERT INTO `restaurant` (`r_id`, `p_name`, `p_email`, `p_about`, `p_password`, `r_bg`, `p_phone`, `p_image`, `r_name`, `r_rating`, `r_cuisine`, `r_pincode`, `reset_code`, `account_status`) VALUES
-(2, 'Vendor Name', 'aftereditofficial@gmail.com', 'Eclipse Global Kitchen brings the world to your plate, blending the vibrant flavors of different cultures into one unforgettable dining experience. Our chefs expertly fuse elements from Asian, European, Latin American, and African cuisines, creating innovative dishes that celebrate global diversity. Whether you\'re craving a spicy street food-inspired dish or a sophisticated fusion of French and Japanese techniques, Eclipse offers a dynamic menu that evolves with the seasons and trends. Join us for a culinary journey around the globe, where every meal is an adventure.', '$2y$10$LQHI87mxEOgERMNJjR9zvuJuUcHbQjQ93qIpQmxhL0LwmXGazEkFu', 'restaurant/cover/img1.jpg', '8899889988', 'restaurant/img2.jpg', 'Eclipse Global Kitchen', '', 'Global Fusion Cuisine', '560016', '0', 'Verified');
+(2, 'Vendor Name', 'aftereditofficial@gmail.com', 'Eclipse Global Kitchen brings the world to your plate, blending the vibrant flavors of different cultures into one unforgettable dining experience. Our chefs expertly fuse elements from Asian, European, Latin American, and African cuisines, creating innovative dishes that celebrate global diversity. Whether you\re craving a spicy street food-inspired dish or a sophisticated fusion of French and Japanese techniques, Eclipse offers a dynamic menu that evolves with the seasons and trends. Join us for a culinary journey around the globe, where every meal is an adventure.', '$2y$10$LQHI87mxEOgERMNJjR9zvuJuUcHbQjQ93qIpQmxhL0LwmXGazEkFu', 'restaurant/cover/img1.jpg', '8899889988', 'restaurant/img2.jpg', 'Eclipse Global Kitchen', '', 'Global Fusion Cuisine', '560016', '0', 'Verified');
 -- Dumping data for table `restaurant`
 --
 
