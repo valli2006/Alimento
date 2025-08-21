@@ -60,7 +60,17 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         } else {
           echo '<a href="user_login.php" class="bg-gray-900 hover:bg-gray-800 focus:border-white cursor-pointer w-max transition-all ease-in-out duration-75 px-6 py-2 text-white rounded-full">Login</a>';
         } ?>
+     
       </div>
+      <div class="mx-3 flex gap-2">
+  <?php if ($login_status == true) {
+    echo '<a href="user_logout.php" class="bg-red-500 hover:bg-red-600 transition-all ease-in-out duration-75 cursor-pointer w-max px-6 py-2 text-white rounded-full">Logout</a>';
+  } else {
+    echo '<a href="user_login.php" class="bg-gray-900 hover:bg-gray-800 focus:border-white cursor-pointer w-max transition-all ease-in-out duration-75 px-6 py-2 text-white rounded-full">User Login</a>';
+    echo '<a href="admin_login.php" class="bg-blue-600 hover:bg-blue-700 focus:border-white cursor-pointer w-max transition-all ease-in-out duration-75 px-6 py-2 text-white rounded-full">Admin Login</a>';
+  } ?>
+</div>
+
 
   </nav>
 
